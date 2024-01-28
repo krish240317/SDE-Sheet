@@ -15,7 +15,7 @@ void row(int i,vector<vector<int>>& matrix)
             if (matrix[i][j] == 0)
             {
                 row[i] = 0;
-                col[j] = 0;
+                col[j] = 9;
             }
         }
     }
