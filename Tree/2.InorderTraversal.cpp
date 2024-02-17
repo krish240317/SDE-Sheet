@@ -13,6 +13,7 @@ public:
     left=right=NULL;    
 }
 };
+
 void inorder(TreeNode* root,vector<int> &v)
 {
      if(root == NULL )
