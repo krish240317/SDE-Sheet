@@ -18,7 +18,7 @@ vector<int> nextGreaterPermutation(vector<int> &A)
         reverse(A.begin(),A.end());
         return A;
     }
-    //step 1 find smaller than it
+    //step 2 find smaller than it
     for (int i = n-1; i < ind; i--)
     {
         if(A[i]<A[ind])

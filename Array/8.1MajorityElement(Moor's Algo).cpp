@@ -13,6 +13,7 @@ public:
             {
                 count =1;
                 find=nums[i];
+                
             }
             else if(nums[i]==find)
             {
@@ -24,7 +25,7 @@ public:
             }
         }
         //now we got our element which can be greter than n/2
-        //verify
+        //verify -Only do  when there is not give majority element always exsist;
         int count1=0;
         for(int i=0;i<n;i++)
         {

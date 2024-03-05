@@ -17,7 +17,7 @@ vector<vector<int>> mergeOverlappingIntervals(vector<vector<int>> &arr){
 		else if(arr[i][0]<=ans.back()[1])
 		{
 			ans.back()[1] = max(arr[i][1],ans.back()[1]);
-		//	ans.back()[1]=arr[i][1]; wrong on output 12 13 16 34
+		//	ans.back()[1]=arr[i][1]; wrong on output 1 4   2 3
 		}
 	}
 	return ans;

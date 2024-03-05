@@ -6,8 +6,8 @@ void row(int i,vector<vector<int>>& matrix)
 
     int n = matrix.size();
     int m = matrix[0].size();
-    int col[m] = {0};
-    int row[n] = {0};
+    int col[m] = {-1};
+    int row[n] = {-1};
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -15,7 +15,7 @@ void row(int i,vector<vector<int>>& matrix)
             if (matrix[i][j] == 0)
             {
                 row[i] = 0;
-                col[j] = 9;
+                col[j] = 0;
             }
         }
     }

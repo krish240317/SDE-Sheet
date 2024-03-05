@@ -6,7 +6,7 @@ public:
     int val;
     TreeNode *left;
     TreeNode *right;
- 
+
    TreeNode(int val1)
 {
     val=val1;
