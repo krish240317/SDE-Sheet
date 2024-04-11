@@ -1,6 +1,8 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
+
+//eg-2 1 5 4 3 0 0
 vector<int> nextGreaterPermutation(vector<int> &A)
 {
     int n =A.size();
@@ -18,7 +20,7 @@ vector<int> nextGreaterPermutation(vector<int> &A)
         reverse(A.begin(),A.end());
         return A;
     }
-    //step 2 find smaller than it
+    //step 2 find greater than it(but the smallest)
     for (int i = n-1; i < ind; i--)
     {
         if(A[i]<A[ind])
