@@ -3,7 +3,7 @@ using namespace std;
 class Solution
 {
 public:
-    int search(vector<int> &arr, int target)
+    bool search(vector<int> &arr, int target)
     {
         int n = arr.size();
         int low = 0;
@@ -13,7 +13,13 @@ public:
         {
             mid = (low + high) / 2;
             if (arr[mid] == target)
-                return mid;
+                return true;
+            if (arr[low] == arr[mid] && arr[mid] == arr[high])
+            {
+                low = low + 1;
+                high = high - 1;
+                continue; // to find new mid
+            }
             // check soterted part
             if (arr[low] <= arr[mid])
             {
@@ -42,7 +48,7 @@ public:
                 }
             }
         }
-        return -1;
+        return false;
     }
 };
 int main()
