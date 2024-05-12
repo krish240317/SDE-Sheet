@@ -20,7 +20,7 @@ bool possible(vector<int> &arr,int day,int m,int k)
         }
     }
 
-   // also check for last bloomed flower in arr as it get not add up as adding of bookey is in eklse part
+   // also check for last bloomed flower in arr as it get not add up as adding of bookey is in else part
    nbookey+=(count/k);
    if(nbookey>=m) return true;
    return false;

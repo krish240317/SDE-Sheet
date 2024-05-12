@@ -19,6 +19,7 @@ bool check(vector<int> & arr,int d,int t)
         int maxi=INT_MIN;
         for(int i=0;i<n;i++)
         {
+            //as answer ai going to be between 1 and maximum
             maxi = max(nums[i],maxi);
         }
         for(int i=1;i<=maxi;i++)

@@ -13,7 +13,8 @@ int floorSqrt(int n)
         if (val <= n)
         {
             ans = mid;
-            // anything on left now can not be my ans
+            //it can be answer but,,,,,
+            // anything on left now can not be my ans as we want maximum 
             low = mid + 1;
         }
         else

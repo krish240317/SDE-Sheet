@@ -3,6 +3,7 @@ using namespace std;
 
 
 //Simple 2pointer aproach
+//for sorted array
 bool searchMatrix(vector<vector<int>>& arr, int B)
 {
     int n=arr.size();
