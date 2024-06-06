@@ -8,11 +8,12 @@ vector<int> nextGreaterPermutation(vector<int> &A)
     int n =A.size();
     int ind=-1;
     //step 1 Find partision
-    for (int i = n-2; i <=0; i--)
+    for (int i = n-2; i >=0; i--)
     {
         if(A[i]<A[i+1])
         {
             ind=i;
+            break;
         }
     }
     if(ind ==-1)
@@ -21,9 +22,9 @@ vector<int> nextGreaterPermutation(vector<int> &A)
         return A;
     }
     //step 2 find greater than it(but the smallest)
-    for (int i = n-1; i < ind; i--)
+    for (int i = n-1; i >=0; i--)
     {
-        if(A[i]<A[ind])
+        if(A[ind]<A[i])
         {
             swap(A[i],A[ind]);
             break;

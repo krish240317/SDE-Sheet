@@ -20,6 +20,7 @@ int countOne(int n)
    while(n != 0)
    {
        n=n&(n-1);
+       //it counts number of set bits in n
        count++;
    }
     return count;

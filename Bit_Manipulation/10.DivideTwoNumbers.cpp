@@ -7,7 +7,7 @@ public:
         if(dividend==divisor) return 1;
         bool sign=true;//+ve
         if(dividend>=0 && divisor<0) sign=false;
-        if(dividend<=0 && divisor>0) sign=false;
+        if(dividend<0 && divisor>0) sign=false;
 
         //take absolut
         long n=abs(dividend);
