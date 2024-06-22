@@ -20,7 +20,7 @@ int balanceBtree(TreeNode * root)
     if(root==NULL) return 0;
     int left = balanceBtree(root->left);
     int right=balanceBtree(root->right);
-    if(left==-1 || right ==-1) return -1;
+    if(left==-1 || right ==-1) return -1;//if one time -1 come then after does not matter anything 
     if(abs(left-right)>1) return -1;//at every node 
     return 1+max(left,right);
 }
