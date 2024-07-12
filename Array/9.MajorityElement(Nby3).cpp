@@ -19,7 +19,7 @@ using namespace std;
 //       int mans=0;
 //         for(auto it:m)
 //         {
-//             if(it.second>n/3)
+//             if(it.second>n/3)                                        
 //             {
 //                  ans1.push_back(it.first);
 //             }

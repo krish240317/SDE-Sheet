@@ -11,6 +11,7 @@ public:
            if(m.find(value) != m.end())
            {
                return {m[value],i};
+                //  return  {m[value],i}; for index return 
            }
             m[nums[i]]=i;
        }
