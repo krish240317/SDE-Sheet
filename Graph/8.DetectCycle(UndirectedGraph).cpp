@@ -19,7 +19,7 @@ bool bfs(int start, int parent, vector<vector<int>> &edges, vector<vector<int>> 
                 vis[it] = 1;
                 q.push({it, node});
             }
-            else if (parent != it)
+            else if (parent != it)//visited but not a parent 
             {
                 return true;
             }

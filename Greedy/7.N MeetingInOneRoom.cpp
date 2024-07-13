@@ -20,7 +20,7 @@ int maxMeetings(int start[], int end[], int n)
     int endtime = v[0].second;
     for (int i = 1; i < n; i++)
     {
-        if (v[i].first > endtime)
+        if (v[i].first > endtime)//start time > endtime of last meeting 
         {
             count++;
             endtime = v[i].second;
