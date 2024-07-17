@@ -11,7 +11,6 @@ public:
         // left interval
         while (i < n && arr[i][1] < newinterval[0])
         {
-
             ans.push_back(arr[i]);
             i++;
         }
