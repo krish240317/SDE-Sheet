@@ -32,25 +32,6 @@ public:
             }
             st.push(i);
         }
-        // if reach end ; i.e-i==n
-        // then next smaller==n & previous smaller will be st.top()
-        // if st.empty then previous will be -1;
-        //  while(!st.empty())
-        //  {
-        //      int i=n;
-        //      int width;
-        //      int height=arr[i];
-        //      st.pop();
-        //      if(st.empty())
-        //      {
-        //          width=-1;
-        //      }
-        //      else
-        //      {
-        //          width=i-st.top()-1;
-        //      }
-        //       maxArea=max(maxArea,height*width);
-        //  }
         return maxArea;
     }
 };

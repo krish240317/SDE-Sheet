@@ -32,7 +32,7 @@ int floor(vector<int> &arr, int n, int x)
 	{
 		//Lower bound arr[i]>=x(least index)
 		int mid =(low+high)/2;
-		if(arr[mid]<=x)
+		if(arr[mid]<=x) 
 		{
 			ans=arr[mid];
 			low=mid+1;

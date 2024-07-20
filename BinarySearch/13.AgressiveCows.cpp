@@ -5,7 +5,7 @@ bool canpossible(vector<int> &arr,int dist,int k)
 {
     int n =arr.size();
     int countcow=1; 
-    int last=arr[0];
+    int last=arr[0];//first cow always at 0 index
     for(int i=1;i<n;i++)
     {
         if(arr[i]-last >=dist)
@@ -32,11 +32,12 @@ int aggressiveCows(vector<int> &arr, int k)
         int mid=(low+high )/2;
         if(canpossible(arr,mid,k)==true)
         {
-            //eleminate left half as tey are smaller 
+            //eleminate left half as tey are smaller  and we have to find max distance
             low=mid+1;
         }
         else
         {
+            //not valid as they are greater than k
             high=mid-1;
         }
     }

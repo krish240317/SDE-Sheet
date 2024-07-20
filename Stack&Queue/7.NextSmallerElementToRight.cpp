@@ -8,10 +8,9 @@ vector<int> nextSmallerElement(vector<int> &prices, int n)
     // int n = prices.size();
     int res[n];
     vector<int> v(n, -1);
-    st.push(prices[n - 1]);
     // v[n-1] = -1;
 
-    for (int i = n - 2; i >= 0; i--)
+    for (int i = n - 1; i >= 0; i--)
     {
         while (st.size() > 0 && prices[i] <= st.top())
         {

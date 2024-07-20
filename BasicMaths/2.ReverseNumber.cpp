@@ -18,7 +18,7 @@ public:
         int last;
         while (x > 0)
         {
-            last = x % 10;
+            last = x % 10;//we get last digit in number 
             reverse = (reverse * 10) + last;
             x = x / 10;
         }

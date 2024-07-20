@@ -16,6 +16,7 @@ public:
             if (arr[l] <= arr[r])
             {
                 // left is smaller and there is someone greter on right
+                //move smaller first
                 if (leftmax > arr[l])
                 {
                     total += leftmax - arr[l];

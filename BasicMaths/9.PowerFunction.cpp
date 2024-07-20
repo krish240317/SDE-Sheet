@@ -5,7 +5,7 @@ class Solution
 public:
     double myPow(double x, int n)
     {
-
+        //x^n;
         double ans = 1;
         long long y = n;
         // if -ve Make it +ve

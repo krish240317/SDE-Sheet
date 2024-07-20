@@ -7,7 +7,7 @@ bool solve(int i ,string s,int n)
     if(i>=n/2)
     return true;
 
-    swap(s[i],s[n-1-i]);
+    //swap(s[i],s[n-1-i]);
     return solve(i+1,s,n);
 }
 int main(){

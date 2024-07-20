@@ -34,11 +34,13 @@ public:
             int mid = (low + high) / 2;
             if (check(nums, mid, t))
             {
+                //possible and we need smaller so..
                 ans = min(ans, mid);
                 high = mid - 1;
             }
             else
             {
+               // if i am not possible my left also not possible 
                 low = mid + 1; // delete left half
             }
         }

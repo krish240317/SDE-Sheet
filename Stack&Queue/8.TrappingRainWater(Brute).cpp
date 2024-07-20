@@ -21,8 +21,8 @@ public:
         int waterTrapped = 0;
         for (int i = 0; i < n; i++)
         {
-
-            waterTrapped += min(prefix[i], suffix[i]) - arr[i];
+            if (prefix[i] > arr[i] && suffix[i] > arr[i])
+                waterTrapped += min(prefix[i], suffix[i]) - arr[i];
         }
         return waterTrapped;
     }

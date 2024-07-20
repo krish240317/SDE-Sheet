@@ -18,7 +18,7 @@ public:
         s1.push(x);
         while (!s2.empty())
         {
-            s1.push(s2.top());
+            s1.push(s2.top()); 
             s2.pop();
         }
     }

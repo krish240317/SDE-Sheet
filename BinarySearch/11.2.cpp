@@ -13,7 +13,7 @@ public:
             if (load + arr[i] > cap)
             {
                 days = days + 1;
-                load = arr[i];
+                load = arr[i];//reset load
             }
             else
             {
@@ -35,7 +35,7 @@ public:
             sum += arr[i];
         }
         int low = maxi;
-        int high = sum;
+        int high = sum; 
         int ans = INT_MAX;
         while (low <= high)
         {
