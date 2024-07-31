@@ -12,7 +12,7 @@ using namespace std;
   };
  
 class Solution
-{
+{ 
 public:
     int maxpath(TreeNode *root, int &ans)
     {

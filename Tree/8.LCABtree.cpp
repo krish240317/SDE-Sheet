@@ -20,7 +20,8 @@ public:
          }
          TreeNode* left=lowestCommonAncestor(root->left,p,q);
          TreeNode* right=lowestCommonAncestor(root->right,p,q);
-
+         
+         //if one node null return other
          if(left ==NULL)
          {
              return right;
@@ -31,6 +32,7 @@ public:
          }
          else
          {
+            //case when we got LCA
              return root;
          }
     }

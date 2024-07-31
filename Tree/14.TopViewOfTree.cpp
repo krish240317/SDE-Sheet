@@ -24,7 +24,10 @@ vector<int> getTopView(TreeNode<int> *root)
     // Write your code here.
     vector<int> ans;
     queue<pair<TreeNode<int>*,int>> q;
+    
+    //map of {level,first element}
     map<int,int> m;
+    //{root,verticle}
     q.push({root,0});
     while(!q.empty())
     {

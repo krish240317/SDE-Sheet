@@ -34,16 +34,19 @@ using namespace std;
 
 bool getpath(TreeNode<int> *root,vector<int> &ans, int x)
 {
+	//using inorder traversal
 	if(root==NULL)
 	{
 		return false;
 	}
+	//push in vector and checkk if root->data==x or not
 	ans.push_back(root->data);
 	if(root->data==x) return true ;
 
 	if(getpath(root->left,ans,x) || getpath(root->right, ans, x))
 	return true;
 
+	//renove by trackbacking 
 	ans.pop_back();
 	return false;
 
