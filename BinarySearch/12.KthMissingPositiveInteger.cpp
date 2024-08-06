@@ -9,7 +9,7 @@ public:
         while(low<=high)
         {
             int mid=(low+high)/2;
-            int missing= arr[mid]-(mid+1);
+            int missing= arr[mid]-(mid+1);//we find out missing number at this place 
             if(missing<k)
             {
                 low=mid+1;

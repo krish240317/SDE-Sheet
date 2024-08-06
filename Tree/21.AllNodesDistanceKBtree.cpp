@@ -47,6 +47,7 @@ public:
         while (!q.empty())
         {
             int size = q.size();
+            //if reaches at 2 distance then break 
             if (level == k)
                 break;
             level++;
@@ -72,6 +73,7 @@ public:
                 }
             }
         }
+        //queue qill have nodes with distance k from target 
         while (!q.empty())
         {
             ans.push_back(q.front()->val);

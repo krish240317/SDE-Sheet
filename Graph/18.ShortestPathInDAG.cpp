@@ -3,8 +3,6 @@ using namespace std;
 //{ Driver Code Starts
 // Initial Template for C++
 
-#include <bits/stdc++.h>
-using namespace std;
 
 // } Driver Code Ends
 // User function Template for C++
@@ -69,6 +67,7 @@ public:
             if (dis[i] == 1e9)
                 dis[i] = -1;
         }
+        //we are returning shortest distance from a source node (0); ie. shortest distance from 0 to every node 
         return dis;
     }
 };

@@ -16,6 +16,7 @@ vector<int> dijkstra(vector<vector<int>> &vec, int n, int e, int src)
     }
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
     vector<int> dist(n, INT_MAX);
+    // pushing {dist,node}
     pq.push({0, src});
     dist[src] = 0;
 
@@ -34,6 +35,7 @@ vector<int> dijkstra(vector<vector<int>> &vec, int n, int e, int src)
             if (dist[node] + wt < dist[v])
             {
                 dist[v] = dist[node] + wt;
+                //pushing updated distance and  node in pq;
                 pq.push({dist[v], v});
             }
         }

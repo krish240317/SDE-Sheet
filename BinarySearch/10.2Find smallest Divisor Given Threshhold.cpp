@@ -3,6 +3,7 @@ using namespace std;
 class Solution
 {
 public:
+//same as  KOKO
     bool check(vector<int> &arr, int d, int t)
     {
         int n = arr.size();

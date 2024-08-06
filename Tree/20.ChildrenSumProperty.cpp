@@ -46,6 +46,7 @@ void changeTree(BinaryTreeNode<int> *root)
         }
         else if (root->right)
         {
+            //we can do both also 
             root->right->data = root->data;
         }
     }

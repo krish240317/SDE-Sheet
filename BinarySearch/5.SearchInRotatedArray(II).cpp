@@ -14,6 +14,7 @@ public:
             mid = (low + high) / 2;
             if (arr[mid] == target)
                 return true;
+                //additional case is duplicate are allowed so problem is  below.....
             if (arr[low] == arr[mid] && arr[mid] == arr[high])
             {
                 low = low + 1;

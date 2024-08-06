@@ -63,14 +63,14 @@ int timeToBurnTree(BinaryTreeNode<int> *root, int start)
     while (!q.empty())
     {
         int size = q.size();
-        // if(level==k) break;
-        // level++;
+        //flage variable to keep track of burn or not 
         int flag = 0;
         for (int i = 0; i < size; i++)
         {
             auto node = q.front();
             q.pop();
             // traverse in all 3 direction
+            
             if (node->left && !vis[node->left])
             {
                 flag = 1;

@@ -11,6 +11,7 @@ public:
     vector<int> shortestPath(int n, int m, vector<vector<int>> &edges)
     {
         // Code here
+        //n+1 everywhere as given 1 starting point 
         vector<pair<int, int>> adj[n + 1];
         for (auto it : edges)
         {
@@ -49,13 +50,14 @@ public:
             return {-1};
         vector<int> path;
         int node = n;
+        //parent is not equal to sorce node 
         while (parent[node] != node)
         {
             path.push_back(node);
             node = parent[node];
         }
         path.push_back(1);
-        path.push_back(dist[n]);
+        path.push_back(dist[n]);//this coditon is given in question to push distan of n node also ;
         reverse(path.begin(), path.end());
         return path;
     }

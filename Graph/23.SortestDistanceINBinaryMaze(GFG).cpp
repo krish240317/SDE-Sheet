@@ -16,7 +16,8 @@ int shortestPath(vector<vector<int>> &grid, pair<int, int> src,
     int delcol[] = {0, 1, 0, -1};
     while (!q.empty())
     {
-        auto top = q.front();
+        auto top = q.front();//difference is we are taking front not top in pq we take top so we get minimum
+                             //here our front is minimum as all are stored in soreted as +1 everytime to distance 
         int row = top.second.first;
         int col = top.second.second;
         int distance = top.first;

@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-//function yo find power 
+//function to find power 
 int f(int mid, int n, int m) {
   long long ans = 1;
   for (int i = 1; i <= n; i++) {

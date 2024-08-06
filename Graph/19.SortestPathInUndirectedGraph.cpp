@@ -17,6 +17,7 @@ using namespace std;
             int node =q.front();
             q.pop();
             for(auto it : adj[node]) {
+                //if distance is less than previous then update 
                 if(dist[node] + 1 < dist[it]) {
                     dist[it] = 1 + dist[node]; 
                     q.push(it); 

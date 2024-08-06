@@ -4,6 +4,7 @@ class Solution {
 public:
 int reqday(vector<int>& arr, int cap)
 {
+    //base on capicity and weight array it calculates no of days 
     int n =arr.size();
     int days=1;
     int load=0;
@@ -11,11 +12,13 @@ int reqday(vector<int>& arr, int cap)
     {
         if(load+arr[i]>cap)
         {
+            //then next day 
         days=days+1;
         load=arr[i];
         }
         else
         {
+        //same day increase load 
             load+=arr[i];
         }
     }

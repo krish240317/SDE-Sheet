@@ -40,6 +40,7 @@ public:
         while (low <= high)
         {
             int mid = (low + high) / 2;
+            //passing (arr,capacity)
             int rdays = reqday(arr, mid);
             if (rdays <= days)
             {
@@ -50,6 +51,8 @@ public:
             else
             {
                 // not possible
+                //capacity less than this mid is not possible so ,Eleminate 
+                //increase capacity 
                 low = mid + 1;
             }
         }
