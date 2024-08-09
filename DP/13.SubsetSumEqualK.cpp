@@ -7,6 +7,7 @@ bool findsum(int ind, int target, vector<int> &arr, vector<vector<int>> &dp)
         return true;
     if (ind == 0)
     {
+        //target kam hoke aaya he 
         if (target == arr[0])
         {
             return true;

@@ -42,6 +42,7 @@ public:
                 {
                     dist[v] = dist[node] + wt;
                     pq.push({dist[v], v});
+                    //parent node to keep track of 
                     parent[v] = node;
                 }
             }

@@ -20,7 +20,7 @@ public:
                 sum -= arr[l];
                 l++;
             }
-
+            //counting  individual  subarray and all other possibles also  
             count = count + (r - l + 1);
 
             r++;

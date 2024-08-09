@@ -2,6 +2,7 @@
 using namespace std;
 // #include <bits/stdc++.h>
 
+//Dijkastra always involves source to destination path
 vector<int> dijkstra(vector<vector<int>> &vec, int n, int e, int src)
 {
     // Write your code here.

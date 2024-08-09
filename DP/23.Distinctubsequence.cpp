@@ -29,7 +29,7 @@ public:
         }
         else
         {
-            result = fun(i - 1, j, s1, s2, dp); // move i
+            result = fun(i - 1, j, s1, s2, dp); // move i as not matching 
         }
         dp[i][j] = result;
         return result;

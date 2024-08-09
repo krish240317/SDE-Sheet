@@ -24,6 +24,7 @@ public:
             int col = top.second.second;
 
             pq.pop();
+            //we write return case here as we can try all possible ways to reach destination 
             if (row == n - 1 && col == m - 1)
                 return distance;
             for (int i = 0; i < 4; i++)
@@ -32,7 +33,7 @@ public:
                 int ncol = col + delcol[i];
                 if (nrow >= 0 && nrow < n && ncol >= 0 && ncol < m)
                 {
-                    int effort = max(abs(heights[row][col] - heights[nrow][ncol]), distance);
+                    int effort = max(abs(heights[row][col] - heights[nrow][ncol]), distance); //here we are watching previous difference calculate in distance array or the new one is max 
                     if (effort < dist[nrow][ncol])
                     {
                         dist[nrow][ncol] = effort;

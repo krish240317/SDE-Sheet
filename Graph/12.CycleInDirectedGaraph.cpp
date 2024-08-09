@@ -17,17 +17,21 @@ class Solution {
   {
     if(!vis[it])
     {
+      //it will get true only when someone return true 
       if(dfscheck(it,adj,vis,pathvis)==true)
       {
         return true;
       }
     }
      else if (pathvis[it]) {
+      //visited and pathvisited also 
+      // if only pathvisited return true there is a cycle 
         return true;
       }
   }
+  //unmarking pathvisited on backtracking 
   pathvis[node]=0;
-  return false;
+  return false;//if not get in else if block 
 }
     // Function to detect cycle in a directed graph.
     bool isCyclic(int n, vector<int> adj[]) {
