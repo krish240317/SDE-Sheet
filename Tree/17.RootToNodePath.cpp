@@ -34,7 +34,7 @@ using namespace std;
 
 bool getpath(TreeNode<int> *root,vector<int> &ans, int x)
 {
-	//using inorder traversal
+	//using preorder traversal
 	if(root==NULL)
 	{
 		return false;
@@ -46,7 +46,7 @@ bool getpath(TreeNode<int> *root,vector<int> &ans, int x)
 	if(getpath(root->left,ans,x) || getpath(root->right, ans, x))
 	return true;
 
-	//renove by trackbacking 
+	//remove by trackbacking 
 	ans.pop_back();
 	return false;
 
