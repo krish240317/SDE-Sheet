@@ -11,7 +11,7 @@ public:
         {
             if (i > maxindex)
                 return false;
-
+                //we can jump  max till i+arr[i] index thats why i+arr[i] 
             maxindex = max(maxindex, i + arr[i]);
         }
         return true;

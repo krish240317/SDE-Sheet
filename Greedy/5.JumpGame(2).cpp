@@ -17,7 +17,9 @@ public:
             { 
                 farthest = max(farthest, i + arr[i]);
             }
+            //l always at r+1
             l = r + 1;
+            //r always at farthest 
             r = farthest;
             jump++;
         }

@@ -21,8 +21,10 @@ public:
         int tk = 0;
         if (prev == -1 || nums[ind] > nums[prev])
         {
+            //Now we are sure we can take---- 
             tk = 1 + findm(ind + 1, ind, nums, dp);
         }
+        //as we take previous -1 initially
         return dp[ind][prev + 1] = max(tk, nt);
     }
     int lengthOfLIS(vector<int> &nums)

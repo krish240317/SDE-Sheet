@@ -21,7 +21,7 @@ public:
             else
             {
                 // found lowerbound of temp of i and replace it
-                int ind = lower_bound(temp.begin(), temp.end(), arr[i]) - temp.begin();
+                int ind = lower_bound(temp.begin(), temp.end(), arr[i]) - temp.begin(); 
                 temp[ind] = arr[i];
             }
         }
