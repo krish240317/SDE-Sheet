@@ -16,10 +16,12 @@ public:
         {
             if (arr[i][0] >= last)
             {
+                //overlaping
                 last = arr[i][1];
             }
             else
             {
+                //not overlaping
                 cnt++;
             }
         }
