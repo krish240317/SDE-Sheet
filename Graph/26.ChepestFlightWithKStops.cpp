@@ -22,7 +22,7 @@ public:
             int cost = top.second.second; // cost till now from src
             q.pop();
             if (stops > k)
-                continue;
+                continue;// break; can also bewe written 
             for (auto it : adj[node])
             {
                 int v = it.first;
