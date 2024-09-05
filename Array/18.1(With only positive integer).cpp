@@ -28,7 +28,7 @@ int longestSubarrayWithSumK(vector<int> a, long long k)
             maxLen = max(maxLen, j - i + 1);
         }
 
-        // Move forward thw right pointer:
+        // Move forward the right pointer:
         j++;
     }
 

@@ -11,10 +11,12 @@ int getLongestSubarray(vector<int> &arr, int k)
     for (int i = 0; i < n; i++)
     {
         sum += arr[i];
+        //this is for to check from start to k 
         if (sum == k)
         {
             maxlen = max(maxlen, i + 1);
         }
+        //find this in map 
         long long rem = sum - k;
         if (prefixsum.find(rem) != prefixsum.end())
         {
