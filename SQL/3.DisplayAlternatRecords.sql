@@ -1,0 +1,2 @@
+-- No of employs whoes count is greater than 1 or frequency of each name > 1
+-- SELECT ename,count(*) FROM emp GROUP BY ename HAVING COUNT(*)>1
