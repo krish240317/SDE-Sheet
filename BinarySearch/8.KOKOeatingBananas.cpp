@@ -1,53 +1,52 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 class Solution
 {
 public:
-    int counthr(vector<int> &v, int hourly)
+    long long int findh(vector<int> &arr, int mid)
     {
-        int totalH = 0;
-        int n = v.size();
-        // find total hours:
+        long long int ans = 0;
+        int n = arr.size();
         for (int i = 0; i < n; i++)
         {
-            totalH += ceil((double)(v[i]) / (double)(hourly)); // important to do double
+            ans += ceil((double)(arr[i]) / (double)(mid));
         }
-        return totalH;
+        return ans;
     }
-
     int minEatingSpeed(vector<int> &arr, int h)
     {
+
+        // range 1 to 11
+        long long int low = 1;
         int n = arr.size();
-        int ans = INT_MAX;
-        int low = 1;
-        // find max
-        int maxi = INT_MIN;
+        int high = 0;
+        long long int ans = 0;
         for (int i = 0; i < n; i++)
         {
-            maxi = max(arr[i], maxi);
+            high = max(arr[i], high);
         }
-        int high = maxi;
-        int mid;
         while (low <= high)
         {
-            mid = (low + high) / 2;
-            int reqtime = counthr(arr, mid);
-
-            if (reqtime <= h)
+            long long int mid = (low + high) / 2;
+            long long int nhr = findh(arr, mid);
+            if (nhr > h)
             {
-                //it can be answer
-                // eleminate right half 
-                ans = mid;
-                high = mid - 1;
+                // not possible
+                low = mid + 1;
             }
             else
             {
-                low = mid + 1;
+                // possible
+                ans = mid;
+                high = mid - 1;
+                // find lowest
             }
         }
         return ans;
     }
 };
+
 int main()
 {
 

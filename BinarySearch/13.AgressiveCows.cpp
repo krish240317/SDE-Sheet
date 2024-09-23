@@ -3,7 +3,8 @@ using namespace std;
 #include "bits/stdc++.h"
 bool canpossible(vector<int> &arr,int dist,int k)
 {
-    int n =arr.size();
+    //we are gradually increasing mid or dist
+    int n = arr.size();
     int countcow=1; 
     int last=arr[0];//first cow always at 0 index
     for(int i=1;i<n;i++)
@@ -23,7 +24,7 @@ int aggressiveCows(vector<int> &arr, int k)
     //    Write your code here.
     sort(arr.begin(),arr.end());
     int n=arr.size();
-
+    int ans=INT_MIN;
     int low=1;
 
     int high =arr[n-1]-arr[0];
@@ -34,6 +35,7 @@ int aggressiveCows(vector<int> &arr, int k)
         {
             //eleminate left half as tey are smaller  and we have to find max distance
             low=mid+1;
+            ans=max(ans,mid);
         }
         else
         {
@@ -41,7 +43,7 @@ int aggressiveCows(vector<int> &arr, int k)
             high=mid-1;
         }
     }
-    return high;
+    return ans;//or high 
 
 }
 int main(){

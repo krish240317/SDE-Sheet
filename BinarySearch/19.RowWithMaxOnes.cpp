@@ -2,7 +2,6 @@
 using namespace std;
 int lowerbound(vector<int> arr,int n,int x)
 {
-    
     int low=0;
     int high=n-1;
     int ans=n;

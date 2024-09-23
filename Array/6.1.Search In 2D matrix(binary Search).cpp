@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int search()
+int search(vector<vector<int>> &arr,int target )
 {
     int n=arr.size();
     int m=arr[0].size();

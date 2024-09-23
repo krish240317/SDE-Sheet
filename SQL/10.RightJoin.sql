@@ -1,0 +1,2 @@
+-- it gives all row from right column and matching rows from left , if no matching row in left then it gives null
+SELECT empno,ename,emp.deptno,dname,loc FROM emp as e RIGHT JOIN dept as d ON (e.deptno=d.deptno);

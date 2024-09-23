@@ -1,0 +1,1 @@
+-- Self join is used when need to join own table 

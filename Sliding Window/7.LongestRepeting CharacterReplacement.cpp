@@ -15,7 +15,7 @@ public:
             m[s[r] - 'A']++;
             maxfreq = max(maxfreq, m[s[r] - 'A']);
             //you can change or delete is size of array - max frequency (other that are counted is can be change or delete )
-            int change = (r - l + 1) - maxfreq; // length of string - maxfreq
+            int change = (r - l + 1) - maxfreq; // length of current string - maxfreq
             if (change <= k)
             {
                 maxlen = max(maxlen, r - l + 1);
