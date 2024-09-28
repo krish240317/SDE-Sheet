@@ -13,7 +13,7 @@ bool searchMatrix(vector<vector<int>>& arr, int B)
     while(j>0 && i<=n )
     {
         if(arr[i][j]==B) return true;
-         if(arr[i][j]<B)
+        if(arr[i][j]<B)
         {
             i++;
         }
