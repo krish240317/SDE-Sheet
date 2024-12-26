@@ -3,6 +3,7 @@ using namespace std;
 int lengthOfLongestSubarray(int arr[], int n)
 {
     // Write your code here
+    //same as 11
     unordered_map<int, int> m;//to reduce time complexity
     int maxlen = 0;
     long sum = 0;

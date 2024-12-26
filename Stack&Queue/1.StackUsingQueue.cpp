@@ -14,7 +14,6 @@ public:
         q.push(x);
         for (int i = 0; i < s; i++)
         {
-
             q.push(q.front());
             q.pop();
         }

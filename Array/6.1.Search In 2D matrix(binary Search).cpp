@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//this is used when you straight the 2d matrix to linear it looks in sorted manner 
 int search(vector<vector<int>> &arr,int target )
 {
     int n=arr.size();

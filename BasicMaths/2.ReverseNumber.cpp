@@ -24,6 +24,7 @@ public:
         }
         if (reverse > a && sign == false || reverse > a - 1 && sign == true)
             return 0;
+            
         if (sign == false)
         {
             return -reverse;

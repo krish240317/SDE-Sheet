@@ -20,7 +20,6 @@ bool searchMatrix(vector<vector<int>>& arr, int B)
         else{
             j--;
         }
-
     }
     return false;
 
