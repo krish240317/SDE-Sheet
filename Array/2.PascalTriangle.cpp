@@ -24,7 +24,7 @@ int pst(int n)
     cout<<ans<<" ";
     for (int  i = 1; i < n; i++)
     {
-        ans=ans*(n-1);
+        ans=ans*(n-i);
         ans=ans/i;
         cout<<ans<<" ";
     }

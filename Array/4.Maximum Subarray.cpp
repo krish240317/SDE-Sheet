@@ -19,7 +19,6 @@ using namespace std;
             }
            
         }
-        if(maxi<0) return maxi;
        return maxi;
     }
 int main(){

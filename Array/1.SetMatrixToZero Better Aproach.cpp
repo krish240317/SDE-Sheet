@@ -26,7 +26,7 @@ void row(int i,vector<vector<int>>& matrix)
             if (row[i] == 0 || col[j] == 0)
             {
                 matrix[i][j] = 0;
-            } // 'i+$8TMQUy,AFNF
+            } 
         }
     }
 }
